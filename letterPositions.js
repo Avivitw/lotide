@@ -33,7 +33,9 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 
-// const nums = [1, 2, [3, 4], 5, [6]];
-// let numsFlattened = flatten(nums);
-// assertArraysEqual(numsFlattened, [1,2,3,4,5,6]);
-
+const line = 'hello';
+let lineWithPositions = letterPositions(line);
+assertArraysEqual(lineWithPositions['h'], [0]);
+assertArraysEqual(lineWithPositions['e'], [1]);
+assertArraysEqual(lineWithPositions['l'], [2, 3]);
+assertArraysEqual(lineWithPositions['o'], [4]);
