@@ -6,7 +6,7 @@ const without = function(source, itemsToRemove) {
   //create a new array to return
   let cleanArray = [];
   //create a loop that compare current value to itemsToRemove
-  //if the current value does not match push it to the new array 
+  //if the current value does not match push it to the new array
   //return the new array
 
   for (let i = 0; i < source.length; i++) {
@@ -14,17 +14,17 @@ const without = function(source, itemsToRemove) {
     for (let j = 0; j < itemsToRemove.length; j++) {
       if (source[i] === itemsToRemove[j]) {
         keepItem = false;
-      } 
+      }
     }
     if (keepItem) {
       cleanArray.push(source[i]);
-    } 
+    }
   }
   //console.log("source:", source);
 
   return cleanArray;
 
-}
+};
 
 
 
@@ -47,7 +47,7 @@ const eqArrays = function(arr1, arr2) {
 
 const assertArraysEqual = function(actual, expected) {
   if (!eqArrays(actual, expected)) {
-    console.log(`Assertion Failed:⛔️⛔️⛔️  ${actual} !==  ${expected}`); 
+    console.log(`Assertion Failed:⛔️⛔️⛔️  ${actual} !==  ${expected}`);
   } else {
     console.log(`Assertion Passed:✅✅✅  ${actual}  ===  ${expected}`);
    
@@ -65,13 +65,13 @@ const assertArraysEqual = function(actual, expected) {
 // assertArraysEqual(nums, [1, 2, 3]);
 
 const words = ["hello", "world", "lighthouse"];
-let wordsAfterCleaning = without(words, ["lighthouse"]); 
+let wordsAfterCleaning = without(words, ["lighthouse"]);
 assertArraysEqual(wordsAfterCleaning, ["hello", "world"]);
 
 
 // console.log(without(["1", "2", "3"], [1, 2, "3"]));
 
 const nums = ["1", "2", "3"];
-let numAfterCleaning = without(nums, [1, 2, "3"]) ;
+let numAfterCleaning = without(nums, [1, 2, "3"]);
 assertArraysEqual(numAfterCleaning, ["1", "2"]);
 
