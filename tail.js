@@ -3,9 +3,9 @@ const tail = function(array) {
   if (Array.isArray(array) && array.length > 0) {
     let arrayTail = array.slice(1);
     return arrayTail;
+  } else { 
+    return [];
   }
-
-  return [];
 };
 
 module.exports = tail;
