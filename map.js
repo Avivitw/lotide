@@ -41,3 +41,5 @@ const nums = [1, 2, 3 ,4];
 const results2 = map(nums, num => num * 2);
 assertArraysEqual(results2, [2, 4, 6, 8]);
 assertArraysEqual(results2, [1, 2, 3 ,4]);
+
+module.exports = map;
