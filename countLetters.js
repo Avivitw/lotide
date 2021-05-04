@@ -47,3 +47,5 @@ assertEqual(string2['a'], 1);
 assertEqual(string2['v'], 2);
 assertEqual(string2['i'], 2);
 assertEqual(string2['t'], 1);
+
+module.exports = countLetters;
