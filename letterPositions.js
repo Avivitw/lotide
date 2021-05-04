@@ -50,3 +50,5 @@ assertArraysEqual(lineWithPositions['h'], [0]);
 assertArraysEqual(lineWithPositions['e'], [1]);
 assertArraysEqual(lineWithPositions['l'], [2, 3]);
 assertArraysEqual(lineWithPositions['o'], [4]);
+
+module.exports = letterPositions;
