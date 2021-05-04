@@ -4,6 +4,7 @@ const middle = require('./middle');
 const countLetters = require('./countLetters');
 const countOnly = require('./countOnly');
 const eqArrays = require('./eqArrays');
+const eqObjects = require('./eqObjects');
 
 
 
@@ -14,5 +15,6 @@ module.exports = {
   countLetters: countLetters,
   countOnly: countOnly,
   eqArrays: eqArrays,
+  eqObjects: eqObjects,
 
 };
