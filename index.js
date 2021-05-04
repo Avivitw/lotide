@@ -7,6 +7,7 @@ const eqArrays = require('./eqArrays');
 const eqObjects = require('./assertObjectsEqual');
 const letterPositions = require('./letterPositions');
 const map = require('./map');
+const takeUntil = require('./takeUntil');
 
 
 
@@ -22,5 +23,6 @@ module.exports = {
   eqObjects: eqObjects,
   letterPositions: letterPositions,
   map: map,
+  takeUntil: takeUntil,
 
 };
