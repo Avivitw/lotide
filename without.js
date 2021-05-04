@@ -1,7 +1,3 @@
-
-
-
-
 const without = function(source, itemsToRemove) {
   //create a new array to return
   let cleanArray = [];
@@ -75,3 +71,4 @@ const nums = ["1", "2", "3"];
 let numAfterCleaning = without(nums, [1, 2, "3"]);
 assertArraysEqual(numAfterCleaning, ["1", "2"]);
 
+module.exports = without;
