@@ -3,6 +3,7 @@ const tail   = require('./tail');
 const middle = require('./middle');
 const countLetters = require('./countLetters');
 const countOnly = require('./countOnly');
+const eqArrays = require('./eqArrays');
 
 
 
@@ -12,5 +13,6 @@ module.exports = {
   middle: middle,
   countLetters: countLetters,
   countOnly: countOnly,
+  eqArrays: eqArrays,
 
 };
