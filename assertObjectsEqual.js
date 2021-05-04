@@ -42,3 +42,4 @@ const eqArrays = function(arr1, arr2) {
 
 assertObjectsEqual({ a: "1", b: "2" }, { b: "2", a: "1" });
 assertObjectsEqual({ b: "2", a: "1" }, { a: "1", b: "2", c: "3" });
+module.exports = eqObjects;
